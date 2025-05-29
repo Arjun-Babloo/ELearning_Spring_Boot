@@ -1,0 +1,9 @@
+package com.learn.java;
+
+public class Main extends Thread {
+	public static void main(String[] args) {
+		String text = "Apple123 Orange456 Banana789 \\d+";
+		String replacedText = text.replace("\\d+", ""); // Removes all numbers
+		System.out.println(replacedText); // Output: Apple Orange Banana
+	}
+}

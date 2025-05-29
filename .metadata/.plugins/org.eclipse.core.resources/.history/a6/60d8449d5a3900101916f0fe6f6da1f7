@@ -1,0 +1,3 @@
+spring.application.name=notification-service
+
+spring.config.import=optional:configserver:http://54.160.76.249:9999

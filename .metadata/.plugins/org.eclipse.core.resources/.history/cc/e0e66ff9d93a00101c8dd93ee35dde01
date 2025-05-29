@@ -1,0 +1,9 @@
+package com.learn.java;
+
+public class Main {
+	public static void main(String[] args) {
+		String a = "Ab";
+		String b = "Ab";
+		System.out.println(a.compareTo(b));
+	}
+}

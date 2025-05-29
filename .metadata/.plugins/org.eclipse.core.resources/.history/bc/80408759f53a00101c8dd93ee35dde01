@@ -1,0 +1,10 @@
+package com.learn.java;
+
+public class Main {
+    public static void main(String[] args) {
+    	Thread thread = new Thread(() -> {
+    	    System.out.println("Thread is running...");
+    	});
+    	thread.start(); // Starts the thread execution
+    }
+}

@@ -1,0 +1,9 @@
+package com.learn.java;
+
+public class Printer extends Thread {
+	
+	@Override
+	public void rn() {
+		System.out.println("Printing");
+	}
+}

@@ -1,0 +1,30 @@
+package com.learn.java;
+
+public class Main {
+    public static void main(String[] args) {
+    	Thread thread = new Thread(() -> {
+    		while(true) {
+    			System.out.println("Thread 1 is running...");
+    			try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+    		}
+    	});
+    	thread.start(); // Starts the thread execution
+    	Thread thread1 = new Thread(() -> {
+    		while(true) {
+    			System.out.println("Thread 2 is running...");
+    			try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+    		}
+    	});
+    	thread1.start(); // Starts the thread execution
+    }
+}
